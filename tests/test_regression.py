@@ -240,5 +240,8 @@ class TestRegressionExperimentCustomTags:
 
 if __name__ == "__main__":
     test_regression()
+    '''boston_dataframe = pycaret.datasets.get_data("boston")
+    test_regression(boston_dataframe, return_train_score=True)            #To run without pytest, uncomment this part and remove the test_regression() call.
+    test_regression(boston_dataframe, return_train_score=False)'''     
     test_regression_predict_on_unseen()
     TestRegressionExperimentCustomTags()
